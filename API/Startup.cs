@@ -36,6 +36,8 @@ namespace API {
 
             });
 
+            // Console.WriteLine ($"Assembly {typeof(List.Handler).FullName} => {typeof(List.Handler).Assembly}");
+
             services.AddMediatR(typeof(List.Handler).Assembly); 
 
             services.AddControllers ();
